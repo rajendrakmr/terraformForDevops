@@ -42,4 +42,43 @@ A Complete Terramform Guide for Developers & DevOps Engineers
   terraform init -upgrade           # Upgrade providers and modules.
   terraform providers lock          # Generate .terraform.lock.hcl (dependency lock).
 ```
-  
+
+- [Outputs & Variables](managing_containers/README.md)
+```bash
+  terraform output              # Show all outputs.
+  terraform output <name>       # Show a specific output.
+```  
+
+- [Import & Refresh](managing_containers/README.md)
+```bash
+  terraform import <resource> <id>  # Import existing infra into Terraform state.
+  terraform refresh                 # Sync state with real infra (⚠️ deprecated).
+  terraform apply -refresh-only     # Refresh only, without changes.
+```
+
+- [Graph & Debugging](managing_containers/README.md)
+```bash
+  terraform graph               # Generate dependency graph (DOT format).
+  terraform version             # Show Terraform version.
+  terraform show                # Human-readable output of state or plan.
+  terraform show -json          # JSON formatted output of state or plan.
+  terraform console             # Interactive console for evaluating expressions.
+  TF_LOG=DEBUG terraform apply  # Enable debug logs.
+```
+
+- [Login & Cloud](managing_containers/README.md)
+```bash
+  terraform login                   # Authenticate with Terraform Cloud.
+  terraform logout                  # Remove stored Terraform Cloud credentials.
+  terraform force-unlock <lock-id>  # Manually unlock state. 
+```
+
+- [Providers & Modules](managing_containers/README.md)
+```bash
+  terraform apply -target=<resource>        # Apply only a specific resource.
+  terraform destroy -target=<resource>      # Destroy a specific resource.
+  terraform taint <resource>        # Mark resource for recreation (⚠️ deprecated).
+  terraform apply -replace=<resource>                 # Replace a specific resource.
+  terraform plan -out=<file>        # Save plan to a file.
+  terraform apply <file>        # Apply from a saved plan file.
+```
