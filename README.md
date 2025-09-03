@@ -75,10 +75,10 @@ A Complete Terramform Guide for Developers & DevOps Engineers
 
 - [Providers & Modules](managing_containers/README.md)
 ```bash
-  terraform apply -target=<resource>        # Apply only a specific resource.
-  terraform destroy -target=<resource>      # Destroy a specific resource.
-  terraform taint <resource>        # Mark resource for recreation (⚠️ deprecated).
-  terraform apply -replace=<resource>                 # Replace a specific resource.
-  terraform plan -out=<file>        # Save plan to a file.
-  terraform apply <file>        # Apply from a saved plan file.
+  terraform apply -target=<resource>    # Apply only a specific resource.
+  terraform destroy -target=<resource>  # Destroy a specific resource.
+  terraform taint <resource>            # Mark resource for recreation (⚠️ deprecated).
+  terraform apply -replace=<resource>   # Replace a specific resource.
+  terraform plan -out=<file>            # Save plan to a file.
+  terraform apply <file>                # Apply from a saved plan file.
 ```
