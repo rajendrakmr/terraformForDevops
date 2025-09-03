@@ -1,6 +1,9 @@
 #TerraformForDevOps 
 A Complete Terramform Guide for Developers & DevOps Engineers 
 
+###
+This guide contains everything you need to get started with Terraform, including installation on all platforms and a full command cheat sheet with short notes.
+
 - [Installation Process](installations_process/README.md)
   
 - [Core Workflow](managing_containers/README.md)
