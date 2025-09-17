@@ -1,2 +1,17 @@
-/vpc/.*
-/vpc/terraform*
+# Ignore Terraform state files (sensitive & auto-generated)
+*.tfstate
+*.tfstate.*
+
+# Crash logs
+crash.log
+
+# Terraform working directory
+.terraform/
+**/.terraform/*
+
+# Sensitive variable files
+*.tfvars
+*.tfvars.json
+
+# Terraform lock file (optional: keep if you want reproducible provider versions)
+.terraform.lock.hcl
