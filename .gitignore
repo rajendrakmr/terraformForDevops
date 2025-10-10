@@ -15,3 +15,6 @@ crash.log
 
 # Terraform lock file (optional: keep if you want reproducible provider versions)
 .terraform.lock.hcl
+
+
+*-key*
