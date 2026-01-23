@@ -10,6 +10,7 @@ resource "aws_dynamodb_table" "my_table" {
   }
   tags = {
     Name = "rk-remote-infra-table"
+    Enviroment ="dev"
   }
 
 }
